@@ -11,15 +11,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-
+    <link rel="stylesheet" href="styles.css">
     <!-- These are the google font stylesheet links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-ourblue ">
+<body class="bg-oursecondblue">
+    <nav class="navbar navbar-expand-lg bg-ourblue">
         <div class="container-fluid">
             <img class="" style="height: 35px;width: 35px;" src="img/logo.webp" alt="">&nbsp;
             <a class="navbar-brand" href="#"><span class="text-ourblue">CyberGuardian</span></a>
@@ -40,10 +40,10 @@
                         <a class="nav-link active" href="indirect.html"><span class="active-color">Indirect</span></a>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="effects.html"><span
                                 class="text-ourblue">Effects/Consequences</span></a></a>
-                    </li>
+                    </li> -->
                     <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -69,70 +69,241 @@
 
     <hr>
     <div class="container-fluid text-center ">
-        <h1 >what is it?</h1>
-        <h3 class="text-center mx-5" >
+        <h1>What is it?</h1>
+        <h3 class="text-center mx-5">
             Indirect cyberbullying is the repeated, negative use of actions, which are neither physical nor verbal, to
-            intentionally hurt others online cyberbullying by proxy is using others to help cyberbully, either with or without the accomplice's knowledge.
+            intentionally hurt others online cyberbullying by proxy is using others to help cyberbully, either with or
+            without the accomplice's knowledge.
         </h3>
         <br>
         <br>
-        <h1 >Examples
+        <h1>Examples
         </h1>
         <div class="card-group">
             <div class="card">
-              <img src="img/cat.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h3 class="card-title">Catfishing</h3>
-                <p class="card-text">The bully creates a fake online identity to befriend the victim, gather personal information, and then use that information to encourage others to harass the victim.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted"></small>
-              </div>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal1"><img src="img/cat.png" class="card-img-top"
+                        alt="..."></a>
+                <div class="card-body">
+                    <h3 class="card-title" id="exampleModal9">Catfishing</h3>
+                    <p class="card-text">The bully creates a fake online identity to befriend the victim, gather
+                        personal information, and then use that information to encourage others to harass the victim.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted"></small>
+                </div>
             </div>
             <div class="card">
-              <img src="img/hacking.webp" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h3 class="card-title">Hacking or Impersonation: </h3>
-                <p class="card-text">The cyberbully could hack into the victim’s social media or email accounts and send harmful messages to others in the victim's name, damaging their reputation and relationships.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted"></small>
-              </div>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal2"><img src="img/hacking.webp"
+                        class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h3 class="card-title">Hacking or Impersonation: </h3>
+                    <p class="card-text">The cyberbully could hack into the victim’s social media or email accounts and
+                        send harmful messages to others in the victim's name, damaging their reputation and
+                        relationships.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted"></small>
+                </div>
             </div>
             <div class="card">
-              <img src="img/download (1).png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h3 class="card-title">Manipulating Friends or Peer:.</h3>
-                <p class="card-text">The cyberbully convinces or tricks friends or peers into cyberbullying the victim. They might spread false information or rumors to incite others to harass the victim.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted"></small>
-              </div>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modal3"><img src="img/download (1).png"
+                        class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h3 class="card-title">Manipulating Friends or Peer:.</h3>
+                    <p class="card-text">The cyberbully convinces or tricks friends or peers into cyberbullying the
+                        victim. They might spread false information or rumors to incite others to harass the victim.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted"></small>
+                </div>
             </div>
-          </div>
-        
-        
-    
-    
-    
-    
-    
-    
-    
         </div>
-<br>
 
-<footer class="bg-dark py-4 mt-auto">
-    <div class="container px-5">
-        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-            <div class="col-auto">
-                <div class="small m-0 text-white">
-                    Copyright &copy; Samuel and Yanzhong 2023
+
+
+
+
+
+
+
+
+    </div>
+    <br>
+
+
+    <!--catfishing-->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modal1">catfishing</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h1>How to Deal with Cyberbullying catfishing:</h1>
+
+                    <ol>
+                        <li>Avoid responding with aggression or engaging in a confrontation. Responding calmly can
+                            reduce the likelihood of escalation. </li>
+
+
+                        <li>Block the harasser and report the incident to the relevant platform or website. Most
+                            platforms have mechanisms for reporting harassment.</li>
+                        Document Evidence:
+
+                        <li>Keep records of all harassing messages or activities. This documentation can be helpful when
+                            reporting the incidenfot or seeking assistance.</li>
+
+                        <li>Talk to friends, family, or colleagues about the situation. Emotional support is crucial in
+                            dealing with the impact of harassment.</li>
+
+                        <li>If the harassment involves serious threats or illegal activities, consider reporting it to
+                            law enforcement. </li>
+
+                        <li>Adjust privacy settings on your social media accounts to control who can see your
+                            information and interactions.</li>
+
+                        <li>Stay informed about online safety, privacy settings, and the features provided by the
+                            platforms you use.</li>
+
+                        <li>If the harassment is causing severe emotional distress, consider seeking help from mental
+                            health professionals or counseling services.</li>
+
+                        <li>Advocate for positive online behavior and support initiatives that promote a safe and
+                            inclusive online environment.</li>
+                        Remember, each situation is unique, and the appropriate response may vary. If you or someone you
+                        know is experiencing cyberbullying harassment, it's essential to take the necessary steps to
+                        address the issue promptly and seek support. Always prioritize your safety and well-being.
+                    </ol>
+
                 </div>
             </div>
         </div>
     </div>
-</footer>
+
+    <!--hacking-->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modal2">hacking</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+
+                <div class="modal-body">
+                    <h1>How to Deal with Cyberbullying hacking:</h1>
+
+                    <ol>
+                        <li>Avoid responding with aggression or engaging in a confrontation. Responding
+                            calmly can reduce the likelihood of escalation. </li>
+
+
+                        <li>Block the harasser and report the incident to the relevant platform or website.
+                            Most platforms have mechanisms for reporting harassment.</li>
+                        Document Evidence:
+
+                        <li>Keep records of all harassing messages or activities. This documentation can be
+                            helpful when reporting the incident or seeking assistance.</li>
+
+                        <li>Talk to friends, family, or colleagues about the situation. Emotional support is
+                            crucial in dealing with the impact of harassment.</li>
+
+                        <li>If the harassment involves serious threats or illegal activities, consider
+                            reporting it to law enforcement. </li>
+
+                        <li>Adjust privacy settings on your social media accounts to control who can see
+                            your information and interactions.</li>
+
+                        <li>Stay informed about online safety, privacy settings, and the features provided
+                            by the platforms you use.</li>
+
+                        <li>If the harassment is causing severe emotional distress, consider seeking help
+                            from mental health professionals or counseling services.</li>
+
+                        <li>Advocate for positive online behavior and support initiatives that promote a
+                            safe and inclusive online environment.</li>
+                        Remember, each situation is unique, and the appropriate response may vary. If you or
+                        someone you know is experiencing cyberbullying harassment, it's essential to take
+                        the necessary steps to address the issue promptly and seek support. Always
+                        prioritize your safety and well-being.
+                    </ol>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--peers-->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modal3">peers</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+
+                <div class="modal-body">
+                    <h1>How to Deal with peer Cyberbullying :</h1>
+
+                    <ol>
+                        <li>Avoid responding with aggression or engaging in a confrontation. Responding
+                            calmly can reduce the likelihood of escalation. </li>
+
+
+                        <li>Block the harasser and report the incident to the relevant platform or website.
+                            Most platforms have mechanisms for reporting harassment.</li>
+                        Document Evidence:
+
+                        <li>Keep records of all harassing messages or activities. This documentation can be
+                            helpful when reporting the incident or seeking assistance.</li>
+
+                        <li>Talk to friends, family, or colleagues about the situation. Emotional support is
+                            crucial in dealing with the impact of harassment.</li>
+
+                        <li>If the harassment involves serious threats or illegal activities, consider
+                            reporting it to law enforcement. </li>
+
+                        <li>Adjust privacy settings on your social media accounts to control who can see
+                            your information and interactions.</li>
+
+                        <li>Stay informed about online safety, privacy settings, and the features provided
+                            by the platforms you use.</li>
+
+                        <li>If the harassment is causing severe emotional distress, consider seeking help
+                            from mental health professionals or counseling services.</li>
+
+                        <li>Advocate for positive online behavior and support initiatives that promote a
+                            safe and inclusive online environment.</li>
+                        Remember, each situation is unique, and the appropriate response may vary. If you or
+                        someone you know is experiencing cyberbullying harassment, it's essential to take
+                        the necessary steps to address the issue promptly and seek support. Always
+                        prioritize your safety and well-being.
+                    </ol>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="bg-ourblue py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0 text-white">
+                        Copyright &copy; Samuel and Yanzhong 2023
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
