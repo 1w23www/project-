@@ -77,3 +77,9 @@ body {
     color: #DDF2FD; /* Example for gold color */
     text-shadow: 2px 2px 2px #000000; /* Shadow effect for depth */
 }
+
+.buttonfixed {
+    position:fixed;
+    bottom:10px;
+    right:10px;
+}
