@@ -79,9 +79,9 @@ body {
 }
 
 .jumbotron-small { 
-    background: url("img/newbackground.png") no-repeat center center; 
+    background: url("img/helpline.png") no-repeat center center; 
     background-size: cover; 
-    height: 400; 
+    height: 500px; 
     display: flex; 
     align-items: center; 
     margin-bottom: 1em; 
