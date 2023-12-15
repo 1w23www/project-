@@ -44,7 +44,11 @@ body {
     color: #435585;
 }
 .active-color:hover{
-    color: red;
+    color: lightblue;
+    background-color: #427D9D;
+}
+.bg-color:hover{
+    background-color: #427D9D;
 }
 
 /* Keyframes! */
@@ -76,4 +80,9 @@ body {
 .text-style {
     color: #DDF2FD; /* Example for gold color */
     text-shadow: 2px 2px 2px #000000; /* Shadow effect for depth */
+}
+
+.navbar-nav > .nav-item{
+    margin-left: 15px;
+    margin-right: 15px;
 }
