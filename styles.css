@@ -82,6 +82,10 @@ body {
     text-shadow: 2px 2px 2px #000000; /* Shadow effect for depth */
 }
 
+.buttonfixed {
+    position:fixed;
+    bottom:10px;
+    right:10px;
 .navbar-nav > .nav-item{
     margin-left: 15px;
     margin-right: 15px;
