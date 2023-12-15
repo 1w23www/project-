@@ -86,3 +86,10 @@ body {
     margin-left: 15px;
     margin-right: 15px;
 }
+
+.transparent-bg {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    color: white; /* White text color */
+    padding: 1rem; /* Optional padding */
+    border-radius: 0.5rem; /* Optional rounded corners */
+}
